@@ -4,6 +4,7 @@
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{wrapfig}
+
 \usepackage{listings}
 
 \graphicspath{{graphics/}}
@@ -836,16 +837,281 @@ $ git branch -D <branch name>
 	\begin{frame}[fragile]
 		\frametitle{Restore Data}
 		
-		\begin{lstlisting}[language=bash]
-			# check logs by following command
-			$ git reflog
-			
-			# moving head to a commit
-			$ git checkout <commit>
-			
-			# moving branch pointer to a commit
-			$ git branch -f <branch-name> <sha1-commit-hash>
-		\end{lstlisting}
+\begin{lstlisting}[language=bash]
+# check logs by following command
+$ git reflog
+
+# moving head to a commit
+$ git checkout <commit>
+
+# moving branch pointer to a commit
+$ git branch -f <branch-name> <sha1-commit-hash>
+\end{lstlisting}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork9}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork10}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork11}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork12}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork13}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Fast Forward Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{fastforwardmerge1}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork9}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork10}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork11}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork12}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork13}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork14}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Merge}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{howgitwork15}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Github and Git}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{githubgit1}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{githubgit2}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{githubgit3}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Github and Git}
+		\begin{itemize}
+			\item push your local repository to remote repository
+			\item 
+\begin{lstlisting}[language=bash]
+# show local branches
+$ git branch
+
+# show local and remote branches
+$ git branch -a
+\end{lstlisting}		
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Warning}
+		in upcoming slides instead of local tracking branch should be remote tracking branch
+	\end{frame}		
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch1}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch2}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch3}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch4}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch5}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch7}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Github and Git}
+		\framesubtitle{branches}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=10cm]{remotebranch8}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Github and Git}
+		\framesubtitle{add branch to remote repository}
+\begin{lstlisting}[language=bash]
+# show remote branches
+$ git ls-remote
+
+# sync remote branch and its local tracking branch
+$ git fetch
+
+# fast forward merge
+$ merge <local tracking branch>
+
+# fetch and merge
+$ git pull <remote> <branch>
+\end{lstlisting}		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Branch type}
+		\begin{itemize}
+			\item local branch
+			\item remote branch
+			\item remote tracking branch
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Branch type}
+		\begin{itemize}
+			\item local branch
+			\item remote branch
+			\item remote tracking branch
+			\item local tracking branch		
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Branch type}
+		\framesubtitle{local tracking branch}
+		Local reference to remote tracking branch
+
+\begin{lstlisting}[language=bash]
+$ git push -u origing <branch>
+
+# create a local tracking branch
+$ git branch --track <name> <remote.t.b>
+
+# show type of branches
+$ git branch -vv
+\end{lstlisting}	
+		
 	\end{frame}
 
 \end{document}
